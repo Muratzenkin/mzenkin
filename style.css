@@ -1,0 +1,217 @@
+html {
+  /*wird verwendet, um einen sanften Bildlauf
+  auf die Seite anzuwenden, wenn zwischen
+  Ankerlinks auf der Seite navigiert wird*/
+  scroll-behavior: smooth;
+}
+
+body {
+  /*padding-top: fügt Koppffreiheit hinzu!*/
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  /*background-image: url(https://images.unsplash.com/photo-1536395155544-a3ba483e0b9b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);*/
+  /*height: 100vh; für die genaue Skalierung des Hintergrunds*/
+  /*background-size: 100% 100%; /*wodurch Breite und Höhe entstehen*/
+  /* width: 100%;
+  background-position: center; auf der Seite zu zentrieren
+  background-repeat: no-repeat; nicht wiederholt wird
+  background-size: cover; Ein bestimmte Größe hat
+  min-height: 100vh; um mindestens den gesamten Bildschirm abzudecken*/
+}
+
+header {
+  /*background-image: url(https://images.unsplash.com/photo-1536395155544-a3ba483e0b9b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);*/
+  color: #132a13;
+  font-family: "Protest Guerrilla", sans-serif;
+  text-align: center;
+  text-transform: uppercase; /*wandelt den Textinhalt aller Elemente in Großbuchstaben um.*/
+  text-shadow: 2px 2px black;
+}
+
+figure {
+  /*Blok Element*/
+  width: 95%; /*setzt die Breite des Elements auf 95% der Seite*/
+  min-height: 85vh; /* (Vievport)Diese Regeln legen die Mindesthöhe des Elements auf 85% der Höhe des Ansichtsbereichs der Seite fest.*/
+  position: relative; /*Das Element relativ zu anderen positionierten Elementen zu positionieren.*/
+  /*overflow: hidden; die überlaufen, Wenn sich der Inhalt des Elements innerhalb der Grenzen der Seite bewegt*/
+  /*display: block;  damit diese Elemente korrekt als Blockelemente(figure) angezeigt werden.*/
+}
+
+iframe {
+  /*Rahmen für die Einbettung von Inhalten*/
+  position: absolute; /*Das bedeutet, dass das Element aus dem normalen Dokumentationsfluss herausgenommen und relativ zum nächstgelegenen übergeordneten Element positioniert wird.*/
+  top: 5%;
+  bottom: 5%;
+  left: 5px;
+  right: 5px;
+  width: 100%;
+  height: 75px;
+}
+
+.erstebild {
+  width: 80%;
+  height: 80%;
+}
+
+.container {
+  position: sticky; /*Ermöglicht, dass das Element beim Scrollen(auf und ab) fixiert bleibt.*/
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  top: 20px; /*fixiert den oberen,rechten und linken Rand des Elemenst der Seite*/
+  right: 0;
+  left: 0;
+  font-size: 24px;
+  z-index: 1; /*Das ermöglicht, dass das Element vor dem anderen Seiteninhalt steht.*/
+}
+
+.menü-link {
+  color: #31572c;
+  text-decoration: none; /*Der Text ist nicht unterstrichen*/
+  margin-left: 16px;
+  margin-right: 10px; /*Damit können Sie den horizontalen Abstand zwischen den Links steuern.*/
+}
+
+.menü-link:hover {
+  /*Stilmerkmale, die beim Hover angewendet werden*/
+  text-decoration: underline; /*Zeigt den unterstrichenen Text an.*/
+  background-color: #90a955;
+}
+
+.logo {
+  position: absolute;
+  left: 32px;
+  top: 16px;
+}
+
+img {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.unseregeschichte {
+  border: dotted 5px;
+  border-color: #132a13;
+  border-radius: 10px;
+  background-color: #90a955;
+  display: flex;
+  margin: 30px;
+  padding: 30px;
+}
+
+.unseregeschichteimg {
+  width: 380px;
+  height: 350px;
+  border-radius: 100px;
+}
+.unseregeschichte p {
+  font-size: 22px;
+  margin: 30px 10px 10px 50px;
+  max-width: 60%;
+  color: #31572c;
+}
+
+h2,
+h3,
+h4 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+
+  color: #132a13;
+}
+
+.ort {
+  font-family: "Press Start 2P", system-ui;
+}
+
+.yatay {
+  background-color: #90a955;
+  display: flex; /*ermöglicht es Flexbox, Elemente relativ zueinander
+innerhalb des ausgewählten Elements anzuordnen*/
+  align-items: center; /*Dies zentriert die internen Elemente im ausgewählten
+Element auf der Vertikalen-Horizontal*/
+  border: solid 2px;
+  border-radius: 5px;
+}
+
+.yatay img {
+  border: solid 2px;
+  color: #90a955;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+.texts {
+  margin: 10px; /*etrafina*/
+  padding: 10px; /*icine*/
+  width: fit-content; /*elementin icine sigar- um in seinen Inhalt zu passen*/
+  border-radius: 8px; /*yari capinda yuvarlar*/
+  background-color: white;
+  color: #132a13;
+}
+
+.zwischenplatz ul {
+  list-style: none; /*blendet Listenzeichenn aus*/
+  padding: 0; /*nach dem Zürucksetzen der Werte */
+  margin: 0;
+  display: flex; /*aktiviert das Flexbox-modell mit display*/
+  flex-direction: row; /*bedeutet horizontale*/
+  justify-content: center;
+  color: #31572c;
+}
+
+.zwischenplatz li {
+  margin-right: 50px; /*fügt zwischen den einzelnen 
+  Listenelementen ein Leerzeichen ein*/
+}
+
+.codeinfo ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.codeinfo a {
+  border: solid 3px;
+  color: #132a13;
+  background-color: #90a955;
+  padding: 10px;
+  text-decoration: none;
+  color: #132a13;
+  margin-right: 20px;
+}
+
+a.fa-solid.fa-circle-up {
+  color: #31572c;
+  font-size: 36px;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  margin-left: 95%;
+  position: relative; /*Der Artikel wird entsprechend dem normalen Ablauf platziert.*/
+}
+
+a.fa-solid.fa-circle-up:hover {
+  color: #132a13;
+  text-decoration: blink; /*Der Text blinkt (yanip söner)*/
+}
+
+.ende p {
+  text-align: center;
+  color: #132a13;
+  text-shadow: #90a955 2px 2px 2px;
+}
+
+footer {
+  background-color: #90a955;
+  color: #132a13;
+  text-align: center;
+  padding: 1em 0;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
